@@ -1,0 +1,17 @@
+.menu-container {
+    margin: 0 auto;
+    width: 50%;
+    position: fixed;
+}
+
+.app-footer {
+    background: black;
+    color: wheat;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font: 'westphalia';
+}
