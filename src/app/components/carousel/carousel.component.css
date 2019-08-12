@@ -1,114 +1,43 @@
-.carousel {
-  overflow: hidden;
+.slick-slider {
   width: 100%;
+  margin: auto;
+  background: #000;
 }
 
-.slides {
-  list-style: none;
-  position: relative;
-  width: 500%;
-  /* Number of panes * 100% */
-  overflow: hidden;
-  /* Clear floats */
-  /* Slide effect Animations*/
-  -moz-animation: carousel 30s infinite;
-  -webkit-animation: carousel 30s infinite;
-  animation: carousel 30s infinite;
-}
-
-.slides>li {
-  position: relative;
-  float: left;
-  width: 20%;
-  /* 100 / number of panes */
-}
-
-.carousel img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
-.carousel h2 {
-  margin-bottom: 0;
-  font-size: 1em;
-  padding: 1.5em 0.5em 1.5em 0.5em;
+.nav-btn {
+  height: 100%;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.75);
-  text-transform: uppercase;
+  width: 100px;
+  cursor: pointer;
+  /* top: 100px !important; */
+  /* height: 1000px; */
 }
 
-@keyframes carousel {
-  0% {
-    left: -5%;
-  }
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
 
-  11% {
-    left: -5%;
-  }
+.prev-slide {
+  /* background: url('../../../assets/images/leftarrow.png') no-repeat scroll 0 0; */
+  /* left: -33px; */
+  /* float: left;
+  margin-right: 130px;
+  height: 1000px; */
+  color: red;
+  background: white !important;
+}
 
-  12.5% {
-    left: -105%;
-  }
+.next-slide {
+  /* background: url('../../../assets/images/rightarrow.png') no-repeat scroll -24px 0px;
+  right: -33px; */
+}
 
-  23.5% {
-    left: -105%;
-  }
+.prev-slide:hover {
+  background-position: 0px -53px;
+}
 
-  25% {
-    left: -205%;
-  }
-
-  36% {
-    left: -205%;
-  }
-
-  37.5% {
-    left: -305%;
-  }
-
-  48.5% {
-    left: -305%;
-  }
-
-  50% {
-    left: -405%;
-  }
-
-  61% {
-    left: -405%;
-  }
-
-  62.5% {
-    left: -305%;
-  }
-
-  73.5% {
-    left: -305%;
-  }
-
-  75% {
-    left: -205%;
-  }
-
-  86% {
-    left: -205%;
-  }
-
-  87.5% {
-    left: -105%;
-  }
-
-  98.5% {
-    left: -105%;
-  }
-
-  100% {
-    left: -5%;
-  }
+.next-slide:hover {
+  background-position: -24px -53px;
 }

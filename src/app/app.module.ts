@@ -10,6 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ParallaxDirective } from './directives/parallax.directive';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +27,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
