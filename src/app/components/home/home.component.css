@@ -3,22 +3,3 @@
     width: 100vw;
     height: 1000px;
 }
-
-.album-container {
-  float: left;
-  /* margin-top: 58vw; */
-}
-
-.album-container>img {
-  width: 40%;
-  margin: 0 auto;
-}
-
-.album-title {
-  margin-left: 25%;
-}
-
-.track-list {
-  margin-left: 0px;
-  font-size: 10px;
-}
