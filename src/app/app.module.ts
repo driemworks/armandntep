@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ParallaxDirective } from './directives/parallax.directive';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { LatestAlbumComponent } from './components/latest-album/latest-album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ParallaxDirective,
-    CarouselComponent
+    CarouselComponent,
+    LatestAlbumComponent
   ],
   imports: [
     BrowserModule,
