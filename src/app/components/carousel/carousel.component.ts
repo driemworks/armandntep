@@ -1,31 +1,44 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
   title = 'ngSlick';
 
+  slides = [];
+  slideConfig = null;
 
-  slides = [
-    { img: '../assets/images/black-composers/1.jpg' },
-    { img: '../assets/images/black-composers/2.jpg' },
-    { img: '../assets/images/black-composers/3.jpg' },
-    { img: '../assets/images/black-composers/4.jpg' },
-  ];
+  @ViewChild(SlickCarouselComponent, null) slickModal: SlickCarouselComponent;
 
-  slideConfig = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: `<div class="nav-btn next-slide">NEXT</div>`,
-    prevArrow: `<div class="nav-btn prev-slide">PREV</div>`,
-    enabled: true,
-    center: true,
-    dots: true,
-    infinite: false
-  };
+  ngOnInit() {
+    this.slides = [
+      { img: '../assets/images/black-composers/1.jpg' },
+      { img: '../assets/images/black-composers/2.jpg' },
+      { img: '../assets/images/black-composers/3.jpg' },
+      { img: '../assets/images/black-composers/4.jpg' },
+    ];
+
+    this.slideConfig = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      center: true,
+      dots: true,
+      arrows: false,
+      infinite: false
+    };
+  }
+
+  slickPrev() {
+    this.slickModal.slickPrev();
+  }
+
+  slickNext() {
+    this.slickModal.slickNext();
+  }
 
   slickInit(e) {
     console.log('slick initialized');

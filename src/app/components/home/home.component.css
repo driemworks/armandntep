@@ -1,3 +1,7 @@
+.home-content {
+    display: grid;
+}
+
 .parallax-header-image {
     margin-left: -15px;
     width: 100vw;

@@ -1,0 +1,58 @@
+.slick-slider {
+  background: black;
+  color: white;
+
+  &__prev-slide {
+    float: left;
+  }
+}
+
+.slick-prev {
+  margin: 200px;
+  font-size: 100px;
+  color: red;
+  background: red;
+}
+
+.nav-btn {
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  cursor: pointer;
+  /* top: 100px !important; */
+  /* height: 1000px; */
+}
+
+.prev-slide.slick-disabled,
+.next-slide.slick-disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.carousel-nav {
+  z-index: 1;
+  position: absolute;
+  height: 66vw;
+  width: 100px;
+  background: black;
+  color: seagreen;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.prev {
+}
+
+.next {
+  margin-left: 91vw;
+}
+
+.prev-slide:hover {
+  background-position: 0px -53px;
+}
+
+.next-slide:hover {
+  background-position: -24px -53px;
+}

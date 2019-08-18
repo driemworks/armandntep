@@ -1,0 +1,25 @@
+.banner {
+    background: gray;
+    /* background: url('../../../assets/images/banner.png'); */
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 0;
+    padding-top: 27%;
+    /* margin-left: 10%; */
+}
+
+.icons {
+    font-size: 40px;
+    margin-top: -10%;
+    color: rgb(235, 164, 97);
+}
+
+.icons > i {
+  padding: 2%;
+}
+
+.icons > i:hover {
+    color: white;
+}
