@@ -1,9 +1,9 @@
-.album-container {
+.latest-album-container {
     float: left;
     /* margin-top: 58vw; */
   }
   
-  .album-container>img {
+  .latest-album-container>img {
     width: 40%;
     margin: 0 auto;
   }
