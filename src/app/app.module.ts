@@ -13,6 +13,8 @@ import { LatestAlbumComponent } from './components/latest-album/latest-album.com
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ContactComponent } from './components/contact/contact.component';
     ParallaxDirective,
     CarouselComponent,
     LatestAlbumComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

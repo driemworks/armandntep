@@ -1,0 +1,14 @@
+.footer-container {
+    height: 5vw;
+    background: black;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+.footer-item {
+    font-size: 20px;
+    color: beige;
+}
