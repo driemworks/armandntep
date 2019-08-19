@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +15,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MediaComponent } from './components/media/media.component';
+import { ShowsComponent } from './components/shows/shows.component';
+import { SafePipe } from './pipes/safepipe.pipe';
+import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { HeaderComponent } from './components/header/header.component';
     LatestAlbumComponent,
     ContactComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    MediaComponent,
+    ShowsComponent,
+    SafePipe,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +43,7 @@ import { HeaderComponent } from './components/header/header.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    SlickCarouselModule
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

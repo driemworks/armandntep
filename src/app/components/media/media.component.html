@@ -1,0 +1,19 @@
+<div class="media-component">
+    <div class="media-title">
+        <span>
+            Media
+        </span>
+    </div>
+    <div class="carousel-nav">
+      <i class="fa fa-chevron-left icon prev-icon" (click)="slickPrev()"></i>
+    </div>
+    <div class="carousel-nav">
+      <i class="fa fa-chevron-right icon next-icon" (click)="slickNext()"></i>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <iframe width="560" height="315" [src]="slide.videoSource | safe" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </ngx-slick-carousel>
+</div>

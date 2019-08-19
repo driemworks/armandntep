@@ -41,6 +41,10 @@
   margin-top: 30vw;
   font-size: 70px;
   margin-left: 2vw;
+
+  @media screen and (max-width: 812px) {
+   font-size: 30px; 
+  }
 }
 
 .next-icon {
@@ -50,8 +54,11 @@
    text-align: center;
    margin-top: 30vw;
    font-size: 70px;
-  font-size: 70px;
-  margin-left: 94vw;
+    font-size: 70px;
+    margin-left: 94vw;
+  @media screen and (max-width: 812px) {
+    font-size: 30px;
+  }
 }
 
 .prev-slide:hover {

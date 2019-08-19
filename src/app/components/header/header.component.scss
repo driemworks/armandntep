@@ -1,0 +1,14 @@
+.header-container {
+  background: url('../../../assets/images/red-pattern.jpg');
+  font-family: 'westphalia';
+  font-size: 90px;
+
+  @media screen and (max-height: 812px) {
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    padding-left: 6%;
+  }
+}
