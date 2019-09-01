@@ -14,3 +14,13 @@ body {
   font-family: 'frontage-outline';
   src: url('./assets/fonts/Frontage-Outline.otf');
 }
+
+@font-face {
+  font-family: 'bourbon-grotesque';
+  src: url('./assets/fonts/BourbonGrotesque.otf');
+}
+
+@font-face {
+  font-family: 'libel';
+  src: url('./assets/fonts/libel-suit-rg.ttf');
+}

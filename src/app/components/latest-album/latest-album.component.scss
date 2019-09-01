@@ -1,0 +1,68 @@
+.latest-album-container {
+  border-top: 2px solid black;
+  display: grid;
+  -webkit-box-shadow: 0px 12px 18px 8px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 12px 18px 8px rgba(0, 0, 0, 0.44);
+  background: #cccbce;
+}
+
+.latest-album-content {
+  margin-top: 4vw;
+  display: inline-flex;
+  @media screen and (max-width: 768px) {
+    display: inline-grid;
+  }
+}
+
+.album-container {
+  margin-left: 4vw;
+  width: 100%;
+  float: left;
+  // display: contents;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.album-cover {
+  width: 35vw;
+  // margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    // margin-right: 2vw;
+  }
+}
+
+.latest-album-container .album-title {
+  text-align: center;
+}
+  
+.album-title {
+  /* margin-left: 25%; */
+  font-family: 'westphalia';
+  font-size: 100px;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    font-size: 70px;
+  }
+}
+
+.amazon-gif {
+  @media screen and (max-width: 768px) {
+    margin-left: 25vw;
+  }
+}
+
+.album-video {
+  width: 50vw;
+  height: 35vw;
+  margin-right: 4vw;
+
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: 82vw;
+    margin-left: 4vw;
+  }
+}

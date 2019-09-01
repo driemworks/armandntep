@@ -22,7 +22,7 @@ export class Track implements ITrack {
 @Component({
   selector: 'app-latest-album',
   templateUrl: './latest-album.component.html',
-  styleUrls: ['./latest-album.component.css']
+  styleUrls: ['./latest-album.component.scss']
 })
 export class LatestAlbumComponent implements OnInit {
 

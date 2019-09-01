@@ -17,9 +17,9 @@ export class CarouselComponent implements OnInit {
   ngOnInit() {
     this.slides = [
       { img: '../assets/images/black-composers/1.jpg' },
-      { img: '../assets/images/black-composers/2.jpg' },
+      { img: '../assets/images/black-composers/15.jpg' },
       { img: '../assets/images/black-composers/3.jpg' },
-      { img: '../assets/images/black-composers/4.jpg' },
+      { img: '../assets/images/black-composers/17.jpg' },
     ];
 
     this.slideConfig = {

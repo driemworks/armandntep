@@ -1,8 +1,9 @@
 <div class="latest-album-container">
-    <span class="album-title">BANTUPHONIC</span>
-    <div>
+  <span class="album-title">BANTUPHONIC</span>
+  <div class="latest-album-content">
+    <div class="album-container">
       <div>
-        <img [src]="'assets/images/bantuphonic.jpg'">
+        <img class="album-cover" [src]="'assets/images/bantuphonic.jpg'">
       </div>
       <div>
         <a class="center-text-link" [href]="'https://www.amazon.com/Bantuphonic-Armand-Ntep/dp/B000CAKY7M'" target="_blank">
@@ -10,16 +11,9 @@
         </a>
       </div>
     </div>
+    <div class="track-list">
+      <iframe class="album-video" src="https://www.youtube.com/embed/zklPKLiYWvI?start=120" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
-  <div class="track-list">
-    <table class="flat-table">
-      <tr *ngFor="let track of bantuphonicTrackList">
-        <td>
-          {{track.num}}
-        </td>
-        <td>
-          {{track.name}}
-        </td>
-      </tr>
-    </table>
-  </div>
+</div>

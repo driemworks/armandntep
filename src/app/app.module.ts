@@ -19,6 +19,7 @@ import { MediaComponent } from './components/media/media.component';
 import { ShowsComponent } from './components/shows/shows.component';
 import { SafePipe } from './pipes/safepipe.pipe';
 import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
+import { AboutComponent } from './components/about/about.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { UnderConstructionComponent } from './components/under-construction/unde
     MediaComponent,
     ShowsComponent,
     SafePipe,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

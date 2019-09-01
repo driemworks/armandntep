@@ -1,5 +1,5 @@
 .home-content {
-    display: block;
+    display: grid;
 }
 
 .parallax-header-image {
